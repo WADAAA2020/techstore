@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Página de cadastro da Tech Store. Crie sua conta para acessar produtos e ofertas exclusivas.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
@@ -16,7 +18,7 @@
     <main>
         <section class="logo">
             <figure>
-                <img src="../assets/logo.png" alt="Logotipo da Tech Store" /">
+                <img src="../assets/logo.png" alt="Logotipo da TechStore" />
             </figure>
         </section>
 
@@ -39,13 +41,11 @@
 
                     <div class="campo">
                         <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="usuario_telefone" placeholder="ex: 19 99999-9999"
-                            autocomplete="tel" />
+                        <input type="tel" id="telefone" name="usuario_telefone" placeholder="ex: (11) 99999-9999"
+                            pattern="\(\d{2}\)\s\d{5}-\d{4}" title="Formato: (XX) XXXXX-XXXX" />
                     </div>
 
-                    <a href="login.html" rel="noopener noreferrer">
-                        <button class="btn" type="button">Finalizar</button>
-                    </a>
+                    <button class="btn" type="submit">Finalizar</button>
                 </form>
             </section>
         </section>
