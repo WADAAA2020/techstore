@@ -9,24 +9,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="./index.css" />
     <title>Tech Store</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <section class="header-container">
             <figure>
                 <img src="..//assets/logo.png" alt="Logotipo da TechStore" />
             </figure>
 
             <form role="search" action="/buscar" method="get" aria-label="Pesquisar no site">
-                <input id="q" name="q" type="search" placeholder="O que você procura?" required />
+                <input id="q" name="q" type="search" placeholder="O que você está procurando hoje? Digite aqui..."
+                    required />
                 <button type="submit">Buscar</button>
-              </form>
-        </nav>
+            </form>
+
+            <div class="icons">
+                <a href="login.html">
+                    <span class="material-icons">account_circle</span>
+                </a>
+                <a href="*">
+                    <span class="material-icons">favorite</span>
+                </a>
+                <a href="*">
+                    <span class="material-icons">shopping_cart</span>
+                </a>
+            </div>
+        </section>
     </header>
 
+    <nav>
+        <section class="nav-container">
+            <a href="*">Mais vendidos</a>
+            <a href="*">Departamentos</a>
+            <a href="*">Cupons</a>
+        </section>
+    </nav>
+
+    <main>
+        
+    </main>
 </body>
 
 </html>
