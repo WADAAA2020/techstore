@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página home da Tech Store. Para ver produtos e ofertas exclusivas.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
@@ -18,40 +17,55 @@
     <header>
         <section class="header-container">
             <figure>
-                <img src="..//assets/logo.png" alt="Logotipo da TechStore" />
+                <img src="../assets/logo.png" alt="Logotipo da TechStore" />
             </figure>
 
-            <form role="search" action="/buscar" method="get" aria-label="Pesquisar no site">
-                <input id="q" name="q" type="search" placeholder="O que você está procurando hoje? Digite aqui..."
-                    required />
-                <button type="submit">Buscar</button>
+            <form class="search-box">
+                <input type="search" placeholder="O que você está procurando hoje? Digite aqui..." required>
+                <button type="submit">
+                    <span class="material-icons">search</span>
+                </button>
             </form>
 
             <div class="icons">
-                <a href="login.html">
+                <div class="icon-item">
                     <span class="material-icons">account_circle</span>
-                </a>
-                <a href="*">
+                    <p>Minha conta</p>
+                </div>
+
+                <div class="icon-item">
                     <span class="material-icons">favorite</span>
-                </a>
-                <a href="*">
+                    <p>Favoritos</p>
+                </div>
+
+                <div class="icon-item">
                     <span class="material-icons">shopping_cart</span>
-                </a>
+                    <p>Carrinho</p>
+                </div>
             </div>
         </section>
+
+        <nav>
+            <section class="nav-container">
+                <a href="#" class="nav-item">Mais vendidos</a>
+        
+                <div class="dropdown">
+                    <button class="nav-item dropdown-btn">Departamentos ▼</button>
+        
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Computadores</a></li>
+                        <li><a href="#">Celulares</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                        <li><a href="#">Periféricos</a></li>
+                    </ul>
+                </div>
+        
+                <a href="#" class="nav-item orange">Cupons</a>
+            </section>
+        </nav>
+        
     </header>
 
-    <nav>
-        <section class="nav-container">
-            <a href="*">Mais vendidos</a>
-            <a href="*">Departamentos</a>
-            <a href="*">Cupons</a>
-        </section>
-    </nav>
-
-    <main>
-        
-    </main>
 </body>
 
 </html>

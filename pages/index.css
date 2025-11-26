@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #001F3F;
+    font-family: "Poppins", sans-serif;
+}
+
+
+header {
+    background: #00264d; 
+    border-bottom: 3px solid #FF851B; 
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+
+.header-container img {
+    height: 150px;
+    width: auto;
+}
+
+
+.search-box {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 3rem;
+}
+
+
+.search-box input {
+    flex: 1;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    font-size: 14px;
+}
+
+
+.search-box button {
+    background: white;
+    border: none;
+    padding: 0 18px;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+}
+
+
+.search-box button .material-icons {
+    font-size: 22px;
+    color: #333;
+}
+
+
+.icons {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 13px;
+}
+
+
+.icon-item .material-icons {
+    font-size: 30px;
+    margin-bottom: 4px;
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px 3rem;
+    background: #00264d;
+}
+
+
+.nav-item {
+    padding: 8px 18px;
+    border: 1px solid #ffffff55;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.nav-item:hover {
+    background: #ffffff22;
+}
+
+
+.nav-item.orange {
+    background: #ff7b00;
+    border-color: #ff7b00;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+
+.dropdown-btn {
+    padding: 8px 18px;
+    border: 1px solid #ffffff55;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.dropdown:hover .dropdown-btn {
+    background: #ffffff22;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background: #002D5E;
+    list-style: none;
+    padding: 0;
+    width: 180px;
+    border-radius: 4px;
+    border: 1px solid #ffffff33;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(5px);
+    transition: 0.25s ease;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+
+.dropdown-menu li a:hover {
+    background: #ffffff22;
+}
