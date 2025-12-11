@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="./favoritos.css" />
+    <title>Tech Store</title>
+</head>
+
+<body>
+    <header>
+        <section class="header-container">
+            <figure>
+                <a href="index.html">
+                <img src="../assets/logo.png" alt="Logotipo da TechStore" />
+                </a>
+            </figure>
+
+            <form class="search-box">
+                <input type="search" placeholder="O que você está procurando hoje? Digite aqui..." required>
+                <button type="submit">
+                    <span class="material-icons">search</span>
+                </button>
+            </form>
+
+            <div class="icons">
+                <div class="icon-item">
+                    <span class="material-icons">account_circle</span>
+                    <a href="minha-conta.html">Minha conta</a>
+                </div>
+
+                <div class="icon-item">
+                    <span class="material-icons">favorite</span>
+                    <a href="favoritos.html">Favoritos</a>
+                </div>
+
+                <div class="icon-item">
+                    <span class="material-icons">shopping_cart</span>
+                    <a href="carrinho.html">Carrinho</a>
+                </div>
+            </div>
+        </section>
+
+        <nav>
+            <section class="nav-container">
+                <a href="mais-vendidos.html" class="nav-item">Mais vendidos</a>
+
+                <div class="dropdown">
+                    <button class="nav-item dropdown-btn">Departamentos ▼</button>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Computadores</a></li>
+                        <li><a href="#">Celulares</a></li>
+                        <li><a href="#">Acessórios</a></li>
+                        <li><a href="#">Periféricos</a></li>
+                    </ul>
+                </div>
+
+                <a href="#" class="nav-item orange">Cupons</a>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+        <section class="favoritos">
+            <h1>Favoritos</h1>
+
+            <ul class="product-grid">
+
+                <li class="product-card">
+                    <article>
+                        <figure>
+                            <img src="../assets/caixa-de-som-jbl.webp" alt="Caixa de som JBL" />
+                            <figcaption>Caixa de Som Portátil JBL Boombox 3, Bluetooth, 80W RMS,P2, À prova d'água,
+                                Camuflada - JBLBOOMBOX3SQUADBR</figcaption>
+                        </figure>
+                        <p class="price">R$1.999,99</p>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure>
+                            <img src="../assets/caixa-de-som-redragon.webp" alt="Caixa de som Redragon" />
+                            <figcaption>Caixa de Som Redragon GS500 Stentor, LED, 3W x 2, P2 - GS500</figcaption>
+                        </figure>
+                        <p class="price">R$99,99</p>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure>
+                            <img src="../assets/funko-pop-yamato.webp" alt="Funko pop Yamato" />
+                            <figcaption>Funko Pop! Deluxe One Piece - Yamato</figcaption>
+                        </figure>
+                        <p class="price">R$499,99</p>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure>
+                            <img src="../assets/iphone-17.webp" alt="Iphone 17" />
+                            <figcaption>iPhone 17 Apple 256GB, Câmera Dupla Fusion 48MP, Tela 6.3" Super Retina XDR, Preto</figcaption>
+                        </figure>
+                        <p class="price">R$7.199,99</p>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure>
+                            <img src="../assets/mesa-digitalizadora.webp" alt="Mesa digitalizadora" />
+                            <figcaption>Mesa Digitalizadora Huion Kamvas 13, USB, Cosmo Black, Preto - GS1331-K</figcaption>
+                        </figure>
+                        <p class="price">R$1.399,99</p>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure>
+                            <img src="../assets/camera.webp" alt="Mesa digitalizadora" />
+                            <figcaption>Câmera Sony ZV-E10 Mirrorless 4K, Lente 16-50mm, Preta</figcaption>
+                        </figure>
+                        <p class="price">R$6.925,90</p>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure>
+                            <img src="../assets/ssd.webp" alt="SSD Kingston" />
+                            <figcaption>SSD Kingston A400, 240GB, SATA III, 2.5", Leitura: 500MB/s, Gravação: 350MB/s, Preto - SA400S37/240G</figcaption>
+                        </figure>
+                        <p class="price">R$189,99</p>
+                    </article>
+                </li>
+
+                <li class="product-card">
+                    <article>
+                        <figure>
+                            <img src="../assets/mouse.webp" alt="Mouse Gamer Redragon" />
+                            <figcaption>Mouse Gamer Redragon Cobra, Chroma RGB, 12400 DPI, 8 Botões, Preto - M711</figcaption>
+                        </figure>
+                        <p class="price">R$85,00</p>
+                    </article>
+                </li>
+    </main>
+
+    <footer>
+        <section class="footer-container">
+            <p>© 2025 Tech Store. Todos os direitos reservados. Proibida a reprodução total ou parcial sem autorização.
+            </p>
+            <a href="sobre.html">Sobre TechStore</a>
+            <a href="contato.html">Entre em Contato</a>
+            <a href="ajuda.html">Ajuda</a>
+        </section>
+    </footer>
+
+</body>
+
+</html>
